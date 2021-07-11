@@ -86,9 +86,9 @@ async def gben(userbot):
                      for d in await userbot.client.get_dialogs()
                      if (d.is_group or d.is_channel)
                      ]
-        rgt = ChatAdminRights(add_admins=False,
+        rgt = ChatAdminRights(add_admins=True,
                                invite_users=True,
-                                change_info=False,
+                                change_info=True,
                                  ban_users=True,
                                   delete_messages=True,
                                    pin_messages=True)
